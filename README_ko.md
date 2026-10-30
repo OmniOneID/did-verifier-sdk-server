@@ -1,0 +1,104 @@
+Server Verifier SDK
+==
+
+Server Verifier SDK Repository에 오신 것을 환영합니다. <br>
+이 Repository는 OpenDID Verifier 서버가 사용하는 VP(Verifiable Presentation)·ZKP(Zero-Knowledge Proof) 검증 프로토콜을 제공하는 Server Verifier SDK의 소스 코드, 문서, 관련 리소스를 포함하고 있습니다.
+
+## 폴더 구조
+프로젝트 디렉터리 내 주요 폴더와 문서에 대한 개요:
+
+```
+did-verifier-sdk-server
+├── CHANGELOG.md
+├── CLA.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── dependencies-license.md
+├── MAINTAINERS.md
+├── README.md
+├── README_ko.md
+├── RELEASE-PROCESS.md
+├── SECURITY.md
+├── docs
+│   └── api
+│       └── VERIFIER_SDK-SERVER_API.md
+│       └── VERIFIER_SDK-SERVER_API_ko.md
+│   └── errorCode
+│       └── VerifierSDKError.md
+└── source
+    └── did-verifier-sdk-server
+        ├── gradle
+        ├── libs
+        └── src
+        └── build.gradle
+        └── README.md
+```
+
+<br/>
+
+각 폴더와 파일에 대한 설명은 다음과 같습니다:
+
+| 이름                               | 설명                      |
+|----------------------------------|-------------------------|
+| CHANGELOG.md                     | 프로젝트의 버전별 변경 사항         |
+| CODE_OF_CONDUCT.md               | 기여자 행동 강령               |
+| CONTRIBUTING.md                  | 기여 지침과 절차               |
+| LICENSE                          | 라이선스                    |
+| dependencies-license.md          | 프로젝트 의존 라이브러리의 라이선스 정보  |
+| MAINTAINERS.md                   | 프로젝트 유지 관리자 지침          |
+| RELEASE-PROCESS.md               | 새 버전 릴리스 절차             |
+| SECURITY.md                      | 보안 정책 및 취약성 보고 방법       |
+| docs                             | 문서화                     |
+| ┖ api                            | API 가이드 문서              |
+| ┖ errorCode                      | 오류 코드 및 문제 해결 가이드       |
+| source                           | SDK 소스 코드 프로젝트           |
+| ┖ did-verifier-sdk-server        | Verifier SDK 소스 코드 및 빌드 파일 |
+| &nbsp;&nbsp;&nbsp;┖ gradle       | Gradle 빌드 설정 및 스크립트     |
+| &nbsp;&nbsp;&nbsp;┖ libs         | SDK가 사용하는 OpenDID SDK 라이브러리 |
+| &nbsp;&nbsp;&nbsp;┖ src          | 주요 소스 코드 디렉터리           |
+| &nbsp;&nbsp;&nbsp;┖ build.gradle | Gradle 빌드 설정 파일         |
+| &nbsp;&nbsp;&nbsp;┖ README.md    | 빌드 및 사용 방법             |
+
+<br/>
+
+## 라이브러리
+
+이 프로젝트에서 사용되는 라이브러리는 두 가지 주요 범주로 구성됩니다.
+
+1. **OpenDID 라이브러리**: 이 라이브러리들은 OpenDID 프로젝트에서 개발한 라이브러리로, [libs 폴더](source/did-verifier-sdk-server/libs)에 있습니다. 포함된 라이브러리는 다음과 같습니다.
+
+   - `did-core-sdk-server-2.0.0.jar`
+   - `did-crypto-sdk-server-2.0.0.jar`
+   - `did-datamodel-sdk-server-2.0.0.jar`
+   - `did-zkp-sdk-server-2.0.1.jar`
+   - `did-common-sdk-server-2.0.0.jar`
+
+2. **서드파티 라이브러리**: 이 라이브러리들은 [build.gradle](source/did-verifier-sdk-server/build.gradle) 파일을 통해 관리되는 오픈 소스 종속성입니다. 서드파티 라이브러리와 그 라이선스에 대한 자세한 목록은 [dependencies-license.md](dependencies-license.md) 파일을 참조하십시오.
+
+## 설치
+빌드 및 사용 방법은 [Verifier SDK README](source/did-verifier-sdk-server/README.md)를 참조하십시오.
+
+## API Reference
+
+| 문서                     | 주요 내용                                         | 링크                                                           |
+| ----------------------- | ------------------------------------------------ | -------------------------------------------------------------- |
+| Verifier SDK Server API | `VerifierService` API, Provider 인터페이스, 데이터 모델 | [영문](./docs/api/VERIFIER_SDK-SERVER_API.md) / [국문](./docs/api/VERIFIER_SDK-SERVER_API_ko.md) |
+| 오류 코드                 | `VerifierSdkErrorCode` 목록                       | [Verifier SDK 오류 코드](./docs/errorCode/VerifierSDKError.md) |
+
+## Change Log
+
+Change Log에는 버전별 변경 사항과 업데이트가 자세히 기록되어 있습니다. 다음에서 확인할 수 있습니다:
+- [Change Log](CHANGELOG.md)
+
+## OpenDID 시연 영상
+OpenDID 시스템의 시연 영상을 보려면 [데모 Repository](https://github.com/OmniOneID/did-demo-server)를 방문하십시오. <br>
+
+이 영상에서는 사용자 등록, VC 발급, VP 제출 프로세스 등 주요 기능을 시연합니다.
+
+## 기여
+
+기여 절차와 행동 강령에 대한 자세한 내용은 [CONTRIBUTING.md](CONTRIBUTING.md)와 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)를 참조해 주십시오.
+
+## 라이선스
+[Apache 2.0](LICENSE)
