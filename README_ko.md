@@ -72,7 +72,7 @@ did-verifier-sdk-server
    - `did-crypto-sdk-server-2.0.0.jar`
    - `did-datamodel-sdk-server-2.0.0.jar`
    - `did-zkp-sdk-server-2.0.1.jar`
-   - `did-common-sdk-server-2.0.0.jar`
+   - `did-common-sdk-server-3.0.0.jar`
 
 2. **서드파티 라이브러리**: 이 라이브러리들은 [build.gradle](source/did-verifier-sdk-server/build.gradle) 파일을 통해 관리되는 오픈 소스 종속성입니다. 서드파티 라이브러리와 그 라이선스에 대한 자세한 목록은 [dependencies-license.md](dependencies-license.md) 파일을 참조하십시오.
 

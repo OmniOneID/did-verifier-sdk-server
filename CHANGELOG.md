@@ -10,7 +10,7 @@
     - Verification confirmation and claim extraction
     - ZKP Proof Request Profile generation and ZKP proof verification
     - Provider interfaces for application servers
-- Uses did-common-sdk-server 2.0.0 and did-zkp-sdk-server 2.0.1
+- Uses did-common-sdk-server 3.0.0 and did-zkp-sdk-server 2.0.1
 
 ### 🐛 Bug Fixes
 - ZKP proof verification uses the nonce stored in the proof request and rejects invalid proofs

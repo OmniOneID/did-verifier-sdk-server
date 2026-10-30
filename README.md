@@ -73,7 +73,7 @@ Libraries used in this project are organized into two main categories:
    - `did-crypto-sdk-server-2.0.0.jar`
    - `did-datamodel-sdk-server-2.0.0.jar`
    - `did-zkp-sdk-server-2.0.1.jar`
-   - `did-common-sdk-server-2.0.0.jar`
+   - `did-common-sdk-server-3.0.0.jar`
 
 2. **Third-Party Libraries**: These libraries are open-source dependencies managed via the [build.gradle](source/did-verifier-sdk-server/build.gradle) file. For a detailed list of third-party libraries and their licenses, please refer to the [dependencies-license.md](dependencies-license.md) file.
 

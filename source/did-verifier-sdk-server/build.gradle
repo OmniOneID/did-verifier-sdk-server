@@ -48,7 +48,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['did-core-sdk-server-2.0.0.jar'])
     implementation fileTree(dir: 'libs', include: ['did-crypto-sdk-server-2.0.0.jar'])
     implementation fileTree(dir: 'libs', include: ['did-datamodel-sdk-server-2.0.0.jar'])
-    implementation files('libs/did-common-sdk-server-2.0.0.jar')
+    implementation files('libs/did-common-sdk-server-3.0.0.jar')
 
     // OpenDID ZKP SDK (Zero-Knowledge Proof)
     implementation fileTree(dir: 'libs', include: ['did-zkp-sdk-server-2.0.1.jar'])
